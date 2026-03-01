@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Paros</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="dark-toggle">
+<label for="dark-toggle" class="toggle-btn">🌙</label>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold">Paros.dev</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-center">
+    <div class="container">
+        <img src="asset/profile.jpeg" class="profile-img mb-3">
+<h1 class="fw-bold gradient-text">Paros Anand</h1>
+        <h4 class="typing">Web Developer</h4>
+        <p>Selamat datang di portfolio saya 👋</p>
+        <a href="#projects" class="btn btn-light mt-3">Lihat Project</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center">About Me</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>
+                    Saya adalah mahasiswa yang fokus pada pengembangan web modern dan UI/UX design.
+                </p>
+
+                <h5>Experience</h5>
+                <ul>
+                    <li>Website Company Profile</li>
+                    <li>CRUD PHP System</li>
+                    <li>Data Visualization</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Skills</h5>
+
+                <div class="mb-3">
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p>CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p>JavaScript</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:75%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p>PHP</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:80%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Projects</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <div class="card modern-card">
+                    <img src="https://via.placeholder.com/300">
+                    <div class="card-body">
+                        <h5>Company Profile</h5>
+                        <p>Website perusahaan modern</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card modern-card">
+                    <img src="https://via.placeholder.com/300">
+                    <div class="card-body">
+                        <h5>CRUD App</h5>
+                        <p>Aplikasi data management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card modern-card">
+                    <img src="https://via.placeholder.com/300">
+                    <div class="card-body">
+                        <h5>Dashboard</h5>
+                        <p>Visualisasi data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 text-center">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: paros@email.com</p>
+        <a href="https://wa.me/62895705081807" class="btn btn-success">WhatsApp</a>
+    </div>
+</section>
+
+</body>
+</html>

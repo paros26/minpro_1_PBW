@@ -1,0 +1,184 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+}
+
+/* PROFILE */
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* BUTTON */
+.btn-light {
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+}
+
+/* CARD */
+.modern-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.modern-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.modern-card img {
+    transition: 0.3s;
+}
+
+.modern-card:hover img {
+    transform: scale(1.1);
+}
+
+/* PROGRESS */
+.progress {
+    height: 10px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+/* TITLE */
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin: 10px auto;
+}
+
+/* TYPING EFFECT */
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 3s steps(20) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* DARK MODE TOGGLE */
+#dark-toggle {
+    display: none;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* DARK MODE STYLE */
+#dark-toggle:checked ~ * {
+    background: #121212 !important;
+    color: white !important;
+}
+
+#dark-toggle:checked ~ * .navbar {
+    background: rgba(0,0,0,0.9) !important;
+}
+
+#dark-toggle:checked ~ * .bg-light {
+    background: #1e1e1e !important;
+}
+
+#dark-toggle:checked ~ * .modern-card {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* HERO IMPROVEMENT */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(100px);
+}
+
+/* ANIMASI MASUK */
+.hero h1, .hero h4, .hero p, .hero a {
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+}
+
+.hero h1 { animation-delay: 0.3s; }
+.hero h4 { animation-delay: 0.6s; }
+.hero p  { animation-delay: 0.9s; }
+.hero a  { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #0d6efd, #6610f2, #0dcaf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
